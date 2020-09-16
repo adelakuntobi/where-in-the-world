@@ -7,7 +7,6 @@ function FetchData() {
   useEffect(() => {
     Axios.get('https://restcountries.eu/rest/v2/all')
       .then(res => {
-        console.log(res)
         setCountries(res.data)
       })
       .catch(err => {

@@ -7,24 +7,25 @@ import Navbar from '../Navbar/Navbar'
 export const UserContext = React.createContext()
 
 
+
 function Mainpage() {
-  // const history = useHistory();
-  // console.log(history)
 
   const [isDark, setisDark] = useState(false)
   function handleChange(newValue) {
     setisDark(newValue);
-    console.log(isDark)
+    // console.log(isDark)
   }
 
   return (
     <div className={isDark ? "darkmode" : "mainpage"}>
       <Navbar toggle={isDark} handler={handleChange} />
-      <Switch> 
-        <Route exact path="/main" component={Displaymain} />
-        <Route exact path="/details" component={Details} />
-        <Redirect to="/" />
-      </Switch>
+      <div className="container mx-auto">
+        <Switch>
+          <Route exact path="/" component={Displaymain} />
+          <Route path="/country/:name" component={Details} />
+          <Redirect to="/" />
+        </Switch>
+      </div>
       {/* <BackToTop
         showOnScrollUp
         showAt={100}
@@ -35,12 +36,12 @@ function Mainpage() {
       </BackToTop> */}
       <div className="container mx-auto">
         <UserContext.Provider value={isDark}>
-          <Displaymain />
+          {/* <Displaymain /> */}
         </UserContext.Provider>
       </div>
     </div>
   )
-  
+
 }
 
 export default Mainpage
