@@ -29,7 +29,7 @@ function FetchData() {
   return (
 
     <div>
-      <div className="flex flex-row w-full justify-between">
+      <div className="flex flex-col md:flex-row w-full justify-between">
         <Search country={countries} handleSearch={handleSearch}/>
         <Filter
           region={region}
