@@ -18,8 +18,11 @@ body {
     background-color: #ffffff;
     // back
   }
-}
 
+}
+input{
+  outline: 0;
+}
 .darkmode {
   min-height: 100vh;
   background-color: hsl(207, 26%, 17%);
@@ -31,6 +34,9 @@ body {
   button{
     box-shadow: 0 0 15px 6px #0000009e;
     border-color:  hsl(209, 23%, 22%);
+    background-color: #2b3945;
+  }
+  input{
     background-color: #2b3945;
   }
 }
