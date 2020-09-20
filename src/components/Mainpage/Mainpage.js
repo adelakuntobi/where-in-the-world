@@ -10,7 +10,7 @@ export const UserContext = React.createContext()
 
 function Mainpage() {
 
-  const [isDark, setisDark] = useState(false)
+  const [isDark, setisDark] = useState(true)
   function handleChange(newValue) {
     setisDark(newValue);
     // console.log(isDark)

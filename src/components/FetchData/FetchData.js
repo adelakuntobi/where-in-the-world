@@ -17,10 +17,9 @@ function FetchData() {
       })
   }, [])
 
-
   return (
     <div>
-      <div className="flex flex-col md:flex-row w-full justify-between">
+      <div className="flex flex-col md:flex-row w-full justify-between px-4">
         <input
           placeholder="Search Country" onChange={(e) => {
             setSearch(e.target.value)
