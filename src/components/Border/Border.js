@@ -25,7 +25,7 @@ function Border(props) {
     <div>
       <button 
       onClick={() =>handleClick(border.name)}
-      className="border px-8 py-2 mr-3 my-2 font-bold">{border.nativeName}</button>
+      className="border px-8 py-2 mr-3 my-2 font-bold">{border.name}</button>
     </div>
   )
 }

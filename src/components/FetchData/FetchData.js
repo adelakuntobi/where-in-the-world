@@ -19,7 +19,7 @@ function FetchData() {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row w-full justify-between px-4">
+      <div className="flex flex-col pt-5 md:flex-row w-full justify-between px-4">
         <input
           placeholder="Search Country" onChange={(e) => {
             setSearch(e.target.value)
@@ -39,7 +39,7 @@ function FetchData() {
         </select>
       </div>
       <div
-        className="my-12   px-4 md:px-0 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 container">
+        className="my-8 md:my-12 px-4 md:px-0 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 container">
         {
           countries.map(country =>
             <Eachcountry key={country.name} country={country} search={search} filter={filter} />)
