@@ -19,7 +19,7 @@ function Navbar(props) {
         <h1 className="text-xl md:text-3xl font-black">Where in the world?</h1>
         <p className="cursor-pointer text-sm md:text-base" onClick={changeState}>
         <FontAwesomeIcon className="mx-1" icon={[toggle ? "fas" : "far", "moon"]} />
-          Dark Mode
+          {toggle ? "Light Mode" : "Dark Mode" }
         </p>
       </nav>
       {/* <ul className="flex flex-row items-center justify-evenly">
