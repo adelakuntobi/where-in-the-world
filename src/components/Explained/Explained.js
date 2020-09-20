@@ -6,10 +6,10 @@ function Explained(props) {
   var commaNumber = require('comma-number')
 
   return (
-    <div className="flex flex-col md:flex-row py-2 px-8 p md:p-8 h-full details">
-      <img src={country.flag} alt="country flag" className="md:w-1/2 w-full pr-0" />
-      <div className="w-full md:w-1/2 px-0 md:px-16">
-        <div className="flex md:flex-row flex-col justify-between md:items-center">
+    <div className="flex flex-col lg:flex-row py-2 px-8 lg:p-8 h-full details lg:w-full  md:w-9/12 mx-auto">
+      <img src={country.flag} alt="country flag" className="lg:w-1/2 w-full pr-0" />
+      <div className="w-full lg:w-1/2 px-0 lg:px-16">
+        <div className="flex lg:flex-row flex-col justify-between lg:items-center">
           <div className="py-2">
             <h2 className="py-2 text-3xl leading-tight">{country.name}</h2>
             <p><b>Native Name:</b> {country.nativeName}</p>

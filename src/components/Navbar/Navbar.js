@@ -17,7 +17,7 @@ function Navbar(props) {
       <nav 
       className="flex flex-row justify-between items-center container mx-auto px-4 py-5">
         <h1 className="text-xl md:text-3xl font-black">Where in the world?</h1>
-        <p className="cursor-pointer" onClick={changeState}>
+        <p className="cursor-pointer text-sm md:text-base" onClick={changeState}>
         <FontAwesomeIcon className="mx-1" icon={[toggle ? "fas" : "far", "moon"]} />
           Dark Mode
         </p>
