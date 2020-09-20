@@ -14,7 +14,7 @@ function Border(props) {
   useEffect(() => {
     Axios.get(`https://restcountries.eu/rest/v2/alpha/${name}`)
       .then(res => {
-        console.log(res)
+        // console.log(res)
         setBorder(res.data)
       })
       .catch(err => {

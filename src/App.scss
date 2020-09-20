@@ -20,7 +20,7 @@ body {
   }
 
 }
-input{
+input,select{
   outline: 0;
 }
 .darkmode {
@@ -36,7 +36,7 @@ input{
     border-color:  hsl(209, 23%, 22%);
     background-color: #2b3945;
   }
-  input{
+  input,select{
     background-color: #2b3945;
   }
 }
