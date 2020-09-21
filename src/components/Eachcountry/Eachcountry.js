@@ -12,7 +12,8 @@ function Eachcountry(props) {
     history.push(`/country/${name}`)
   }
 
-  if (search !== "" && country.name.toLocaleLowerCase().indexOf(search) === -1) {
+  if (search !== "" && 
+  country.name.toLowerCase().indexOf(search.toLowerCase()) === -1) {
     return null
   }
 

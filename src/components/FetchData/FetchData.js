@@ -20,12 +20,15 @@ function FetchData() {
   return (
     <div>
       <div className="flex flex-col pt-5 md:flex-row w-full justify-between px-4">
-        <input
-          placeholder="Search Country" onChange={(e) => {
-            setSearch(e.target.value)
-            setFilter("")
-          }}
-          aria-label="Search Country" className="p-3" />
+        <div>
+          <input
+
+            placeholder="Search Country" onChange={(e) => {
+              setSearch(e.target.value)
+              setFilter("")
+            }}
+            aria-label="Search Country" className="p-3" />
+        </div>
         <select className="p-3" onChange={(e) => {
           setSearch("")
           setFilter(e.target.value)
